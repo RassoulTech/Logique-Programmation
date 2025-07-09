@@ -1,0 +1,80 @@
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+/* header,#corps{
+    position: relative;
+    text-align: center;
+}
+
+header{
+    color: #ff7b6d;
+}
+
+header h1{
+    font-size: 60px;
+}
+
+#corps
+{
+    position: relative;
+    background-color:#ff7b6d;
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 10vh;
+    padding: 5px;
+    padding-bottom: 8vh; 
+    width: 35%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#corps .title h1{
+    background-color: #fff;
+    color: #ff7b6d;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#corps .title input{
+    width: 70%;
+}
+#corps .title button{
+    width: 90px;
+    color: #ff7b6d;
+    font-weight: bold;
+    font-size: 15px;
+}
+#corps .title input, #corps .title button
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#corps button{
+    color: #ff7b6d;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #ff7b6d;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10vh;
+} */
