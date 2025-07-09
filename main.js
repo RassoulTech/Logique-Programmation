@@ -52,7 +52,7 @@ function afficherMot() {
 function validerMot() {
     const liste = getListeActuelle();
     const motUtilisateur = input.value.trim();
-    if(motUtilisateur === "" || motUtilisateur != String){
+    if(motUtilisateur === ""){
         messageErreur.textContent ='Veillez tapez le mot indiqué dans le champs.';
         messageErreur.style.display = "block";
         return;
