@@ -28,6 +28,8 @@ const scoreText = document.getElementById("score");
 const boutonMots = document.getElementById("lesMots");
 const boutonPhrases = document.getElementById("lesPhrases");
 const messageErreur = document.getElementById('erreur');
+const boutonPartager = document.getElementById("partager");
+const confirmationPartage = document.getElementById("confirmationPartage");
 
 
 // Étape 2 : L’utilisateur tape ce mot au clavier. 
@@ -117,3 +119,24 @@ boutonPhrases.addEventListener("change", () => {
 });
 
 window.addEventListener("load", demarrerJeu);
+
+
+// Bouton partager
+boutonPartager.addEventListener("click", () => {
+    const message = `J'ai obtenu un score de ${score}/${total} sur AzerType ! 💻⌨️`;
+
+    navigator.clipboard.writeText(message)
+        .then(() => {
+            confirmationPartage.textContent = "Message copié dans le presse-papiers !";
+            confirmationPartage.style.display = "block";
+
+            // Cacher le message après 3 secondes
+            setTimeout(() => {
+                confirmationPartage.style.display = "none";
+            }, 3000);
+        })
+        .catch(() => {
+            confirmationPartage.textContent = "Erreur lors de la copie du message.";
+            confirmationPartage.style.display = "block";
+        });
+});
